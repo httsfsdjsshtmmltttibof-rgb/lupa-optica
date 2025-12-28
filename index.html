@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lalu Optica</title>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+
+    body {
+      background: linear-gradient(180deg, #161b9d 0%, #0f136f 100%);
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 420px;
+      padding: 20px 16px 120px;
+      text-align: center;
+    }
+
+    /* PROFILE */
+    .profile { margin-top: 20px; }
+
+    .profile img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid #e6e9ff;
+      object-fit: cover;
+      background: #ffffff;
+    }
+
+    .name {
+      margin-top: 14px;
+      font-size: 22px;
+      font-weight: 700;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+      letter-spacing: 0.3px;
+    }
+
+    .bio{
+      margin-top:6px;
+      font-size:14px;
+      font-weight:400;
+      color:#ffffff;
+    }
+
+    .check {
+      background: #3b82f6;
+      color: #ffffff;
+      border-radius: 50%;
+      font-size: 11px;
+      width: 18px;
+      height: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 0 2px #161b9d;
+    }
+
+    /* BUTTONS */
+    .buttons {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .btn {
+      background: #ffffff;
+      color: #161b9d;
+      padding: 15px 18px;
+      border-radius: 18px;
+      text-decoration: none;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 14px;
+      animation: pulse 4s infinite;
+      box-shadow: 0 10px 22px rgba(22,27,157,0.35);
+    }
+
+    .btn span {
+      flex: none;
+      text-align: left;
+    }
+
+    .btn i { font-size: 18px; width: 22px; text-align: center; }
+
+    @keyframes pulse {
+      0%,100% { transform: scale(1); }
+      50% { transform: scale(1.03); }
+    }
+
+    /* MAP CARD */
+    .map-card {
+      margin-top: 18px;
+      background: #ffffff;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 12px 26px rgba(22,27,157,0.35);
+    }
+
+    .map-title {
+      padding: 12px 14px;
+      font-weight: 600;
+      color: #161b9d;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .map-card iframe {
+      width: 100%;
+      height: 220px;
+      border: 0;
+      display: block;
+    }
+
+    /* SHARE BUTTON */
+    .share-btn {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: #ffffff;
+      color: #161b9d;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      box-shadow: 0 12px 26px rgba(22,27,157,0.45);
+      cursor: pointer;
+      animation: float 3s infinite;
+    }
+
+    @keyframes float {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+      .footer{
+      margin-top:14px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      gap:8px;
+      padding:10px 0;
+      background:transparent;
+    }
+    .footer button{
+      flex:1;
+      border:none;
+      background:transparent;
+      color:#ffffff;
+      font-size:13px;
+      font-weight:500;
+      cursor:pointer;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="profile">
+    <img src="https://i.postimg.cc/7PdwW2mv/photo-2025-12-28-03-12-15.jpg" alt="Lalu Optica" />
+    <div class="name">Lalu Optica <span class="check"><i class="fa-solid fa-check"></i></span></div>
+    <div class="bio">Hammasini shu yerdan toping</div>
+  </div>
+
+  <div class="buttons">
+    <a class="btn" href="tel:+998777450995"><i class="fa-solid fa-phone"></i><span>Telefon</span></a>
+    <a class="btn" href="https://t.me/lalu_optical" target="_blank"><i class="fa-brands fa-telegram"></i><span>Telegram</span></a>
+    <a class="btn" href="https://t.me/Lalu_optica" target="_blank"><i class="fa-brands fa-telegram"></i><span>Telegram Admin</span></a>
+    <a class="btn" href="https://www.instagram.com/lalu_optical" target="_blank"><i class="fa-brands fa-instagram"></i><span>Instagram</span></a>
+    <a class="btn" href="https://www.instagram.com/lalu_optical_2" target="_blank"><i class="fa-brands fa-instagram"></i><span>Instagram 2</span></a>
+    <a class="btn" href="https://yandex.ru/maps?whatshere%5Bpoint%5D=69.21163531288401%2C41.20173186074589" target="_blank"><i class="fa-solid fa-location-dot"></i><span>Lokatsiya</span></a>
+  </div>
+
+  <!-- MAP CARD -->
+  <div class="map-card">
+    <a href="https://yandex.ru/maps?whatshere%5Bpoint%5D=69.21163531288401%2C41.20173186074589" target="_blank" class="map-title">
+      <i class="fa-solid fa-location-dot"></i> Lokatsiya (Yandex Maps)
+    </a>
+    <iframe src="https://yandex.ru/map-widget/v1/?ll=69.21163531288401%2C41.20173186074589&z=15"></iframe>
+  </div>
+
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <button onclick="alert('Xavfsizlik uchun')">Cookie</button>
+    <span style="opacity:0.6;">•</span>
+    <button onclick="alert('Xavfsizlik uchun')">Report</button>
+    <span style="opacity:0.6;">•</span>
+    <button onclick="window.open('https://www.instagram.com/_neolink1','_blank')">Privacy</button>
+  </footer>
+
+</div>
+
+<!-- SHARE -->
+<div class="share-btn" onclick="sharePage()"><i class="fa-solid fa-share-nodes"></i></div>
+
+<script>
+function sharePage(){
+  const data={title:'Lalu Optica',text:'Lalu Optica rasmiy sahifasi',url:location.href};
+  if(navigator.share){navigator.share(data).catch(()=>{});} 
+  else{prompt('Linkni nusxalang:',location.href);} 
+}
+</script>
+
+
+
+</body>
+</html>
